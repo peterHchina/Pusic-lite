@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <development version="6300" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9059"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PreferenceController">
+            <connections>
+                <outlet property="themeButton1" destination="8HS-D2-awP" id="Jtx-60-xTP"/>
+                <outlet property="themebutton2" destination="dHF-uT-08O" id="wAN-hx-hbH"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="746" y="552" width="576" height="314"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="576" height="314"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <tabView focusRingType="none" appearanceType="aqua" fixedFrame="YES" drawsBackground="NO" translatesAutoresizingMaskIntoConstraints="NO" id="al1-QA-w1g">
+                        <rect key="frame" x="-8" y="-10" width="592" height="323"/>
+                        <animations/>
+                        <font key="font" metaFont="system"/>
+                        <tabViewItems>
+                            <tabViewItem label="外观" identifier="1" id="Tmb-xt-O8A">
+                                <view key="view" ambiguous="YES" id="elv-v0-dEC">
+                                    <rect key="frame" x="10" y="33" width="110" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <box autoresizesSubviews="NO" fixedFrame="YES" title="主题(程序重启即可生效)" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="e8e-eI-dKz">
+                                            <rect key="frame" x="6" y="-272" width="560" height="262"/>
+                                            <view key="contentView">
+                                                <rect key="frame" x="1" y="1" width="558" height="246"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHF-uT-08O">
+                                                        <rect key="frame" x="355" y="70" width="150" height="168"/>
+                                                        <animations/>
+                                                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="theme2_ok" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="lwo-DH-pEQ">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <string key="keyEquivalent"></string>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="setThemeList:" target="-2" id="w9S-FL-xkH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8HS-D2-awP">
+                                                        <rect key="frame" x="49" y="70" width="150" height="168"/>
+                                                        <animations/>
+                                                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="theme1_ok" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="TYg-le-n2a">
+                                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <string key="keyEquivalent"></string>
+                                                        </buttonCell>
+                                                        <connections>
+                                                            <action selector="setThemeSimple:" target="-2" id="WdM-eV-bh7"/>
+                                                        </connections>
+                                                    </button>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQN-rj-aN0">
+                                                        <rect key="frame" x="404" y="40" width="52" height="17"/>
+                                                        <animations/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="列表式" id="Djs-bM-K6P">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PjU-Le-FF0">
+                                                        <rect key="frame" x="98" y="40" width="52" height="17"/>
+                                                        <animations/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="精简式" id="7dX-ja-Lq4">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                                <animations/>
+                                            </view>
+                                            <animations/>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </box>
+                                    </subviews>
+                                    <animations/>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="其他" identifier="2" id="A38-wv-pJ0">
+                                <view key="view" canDrawConcurrently="YES" id="6Db-dC-WXD">
+                                    <rect key="frame" x="10" y="33" width="572" height="277"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k2t-vg-U2v">
+                                            <rect key="frame" x="61" y="217" width="198" height="18"/>
+                                            <animations/>
+                                            <buttonCell key="cell" type="check" title="是否显示dock图标" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="GWp-B8-QPh">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="showAppIcon:" target="-2" id="T9q-RS-4hb"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <animations/>
+                                </view>
+                            </tabViewItem>
+                        </tabViewItems>
+                    </tabView>
+                </subviews>
+                <animations/>
+            </view>
+            <point key="canvasLocation" x="293" y="25"/>
+        </window>
+        <collectionViewItem id="r0V-5K-nk2">
+            <connections>
+                <outlet property="view" destination="pgR-6o-qq9" id="9cr-Bb-RTH"/>
+            </connections>
+        </collectionViewItem>
+        <view id="pgR-6o-qq9">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zZL-0P-b69">
+                    <rect key="frame" x="-3" y="17" width="106" height="86"/>
+                    <animations/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="Yv1-BW-aWK"/>
+                    <connections>
+                        <binding destination="r0V-5K-nk2" name="value" keyPath="representedObject.imageView" id="Kj1-In-LCl"/>
+                    </connections>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gs0-Gq-0J8">
+                    <rect key="frame" x="31" y="0.0" width="38" height="17"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="s1a-49-rGd">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                    <connections>
+                        <binding destination="r0V-5K-nk2" name="value" keyPath="representedObject.textField" id="jdH-Ke-6Bb"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <animations/>
+            <point key="canvasLocation" x="163" y="472"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="theme1_ok" width="341" height="379"/>
+        <image name="theme2_ok" width="341" height="379"/>
+    </resources>
+</document>

@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0070AC11C1730EA0047FBDC /* music_cover_default.png in Resources */ = {isa = PBXBuildFile; fileRef = D0070AC01C1730EA0047FBDC /* music_cover_default.png */; };
+		D0070AC31C1732640047FBDC /* warning_default.png in Resources */ = {isa = PBXBuildFile; fileRef = D0070AC21C1732640047FBDC /* warning_default.png */; };
+		D00C76F81C109D4700149994 /* status_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = D00C76F71C109D4700149994 /* status_dark.png */; };
+		D03625441BADC00A000BF693 /* theme2_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = D03625431BADC00A000BF693 /* theme2_ok.png */; };
+		D03625471BADC2AC000BF693 /* theme1.png in Resources */ = {isa = PBXBuildFile; fileRef = D03625451BADC2AC000BF693 /* theme1.png */; };
+		D03625481BADC2AC000BF693 /* theme1_ok.png in Resources */ = {isa = PBXBuildFile; fileRef = D03625461BADC2AC000BF693 /* theme1_ok.png */; };
+		D036254A1BADC343000BF693 /* theme2.png in Resources */ = {isa = PBXBuildFile; fileRef = D03625491BADC343000BF693 /* theme2.png */; };
+		D03D32AA1BAE8D3F008742A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D03D32A91BAE8D3F008742A5 /* InfoPlist.strings */; };
+		D03D32AC1BAE8D65008742A5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D03D32AB1BAE8D65008742A5 /* Info.plist */; };
+		D03F854B1B78DD9300803576 /* RFOverlayScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F85481B78DD9300803576 /* RFOverlayScroller.m */; };
+		D03F854C1B78DD9300803576 /* RFOverlayScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F854A1B78DD9300803576 /* RFOverlayScrollView.m */; };
+		D03F85501B78F83200803576 /* BDTableRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F854F1B78F83200803576 /* BDTableRowView.m */; };
+		D042EC0F1B77616300D1E8C5 /* PusicStatusBarListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D042EC0D1B77616300D1E8C5 /* PusicStatusBarListViewController.m */; };
+		D042EC101B77616300D1E8C5 /* PusicStatusBarListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D042EC0E1B77616300D1E8C5 /* PusicStatusBarListViewController.xib */; };
+		D042EC1C1B77AC5200D1E8C5 /* PusicTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = D042EC1B1B77AC5200D1E8C5 /* PusicTableCellView.m */; };
+		D04ADB341B25EC2E0094190A /* PreferenceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D04ADB331B25EC2E0094190A /* PreferenceController.xib */; };
+		D072892C1C13E90400A70112 /* default.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D072892B1C13E8E200A70112 /* default.sqlite */; };
+		D072D39A1B76508C006B27DC /* AYProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = D072D3991B76508C006B27DC /* AYProgressIndicator.m */; };
+		D072D3AB1B7661D6006B27DC /* Repeat_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D072D3A71B7661D6006B27DC /* Repeat_normal.png */; };
+		D072D3AC1B7661D6006B27DC /* Repeat_press.png in Resources */ = {isa = PBXBuildFile; fileRef = D072D3A81B7661D6006B27DC /* Repeat_press.png */; };
+		D072D3AD1B7661D6006B27DC /* Shuffle_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D072D3A91B7661D6006B27DC /* Shuffle_normal.png */; };
+		D072D3AE1B7661D6006B27DC /* Shuffle_press.png in Resources */ = {isa = PBXBuildFile; fileRef = D072D3AA1B7661D6006B27DC /* Shuffle_press.png */; };
+		D072D3B11B7670E5006B27DC /* Songlist_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D072D3AF1B7670E5006B27DC /* Songlist_normal.png */; };
+		D072D3B61B7676DE006B27DC /* Songlist_press.png in Resources */ = {isa = PBXBuildFile; fileRef = D072D3B51B7676DE006B27DC /* Songlist_press.png */; };
+		D0B0B3111AFDAD9A0075469C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B0B3101AFDAD9A0075469C /* AppDelegate.m */; };
+		D0B0B3131AFDAD9A0075469C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B0B3121AFDAD9A0075469C /* main.m */; };
+		D0B0B3161AFDAD9A0075469C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B0B3151AFDAD9A0075469C /* ViewController.m */; };
+		D0B0B3181AFDAD9A0075469C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B3171AFDAD9A0075469C /* Images.xcassets */; };
+		D0B0B31B1AFDAD9A0075469C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B3191AFDAD9A0075469C /* Main.storyboard */; };
+		D0B0B3271AFDAD9A0075469C /* Pusic_LiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B0B3261AFDAD9A0075469C /* Pusic_LiteTests.m */; };
+		D0B0B3331AFDAE8E0075469C /* Music.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B0B3321AFDAE8E0075469C /* Music.m */; };
+		D0B0B3371AFDAED20075469C /* CreateDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B0B3361AFDAED20075469C /* CreateDataBase.m */; };
+		D0B0B33B1AFDAF1F0075469C /* PusicRHStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B0B33A1AFDAF1F0075469C /* PusicRHStatusItemView.m */; };
+		D0B0B3441AFDAF8F0075469C /* PusicStatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B0B3421AFDAF8F0075469C /* PusicStatusBarViewController.m */; };
+		D0B0B3451AFDAF8F0075469C /* PusicStatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B3431AFDAF8F0075469C /* PusicStatusBarViewController.xib */; };
+		D0B0B34A1AFDAFD60075469C /* MusicDao.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B0B3491AFDAFD60075469C /* MusicDao.m */; };
+		D0B0B34C1AFDB17D0075469C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B0B34B1AFDB17D0075469C /* AVFoundation.framework */; };
+		D0B0B3501AFDB1E20075469C /* PusicUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B0B34F1AFDB1E20075469C /* PusicUserDefaults.m */; };
+		D0B0B3551AFDB71C0075469C /* PusicAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B0B3531AFDB71C0075469C /* PusicAlert.m */; };
+		D0B0B3561AFDB71C0075469C /* PusicAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B3541AFDB71C0075469C /* PusicAlert.xib */; };
+		D0B0B3591AFDBE920075469C /* PusicContant.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B0B3581AFDBE920075469C /* PusicContant.m */; };
+		D0B0B35C1AFDC6CC0075469C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B0B35B1AFDC6CC0075469C /* libsqlite3.dylib */; };
+		D0B0B35E1AFF39830075469C /* status.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B35D1AFF39830075469C /* status.png */; };
+		D0B0B3641AFF3CE10075469C /* pusic_lite.icns in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B3631AFF3CE10075469C /* pusic_lite.icns */; };
+		D0B0B36E1AFF3F990075469C /* state_next_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B3651AFF3F990075469C /* state_next_pressed.png */; };
+		D0B0B36F1AFF3F990075469C /* state_play_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B3661AFF3F990075469C /* state_play_pressed.png */; };
+		D0B0B3701AFF3F990075469C /* state_play_puse_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B3671AFF3F990075469C /* state_play_puse_normal.png */; };
+		D0B0B3711AFF3F990075469C /* state_play_puse_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B3681AFF3F990075469C /* state_play_puse_pressed.png */; };
+		D0B0B3721AFF3F990075469C /* state_por_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B3691AFF3F990075469C /* state_por_pressed.png */; };
+		D0B0B3731AFF3F990075469C /* state_next_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B36A1AFF3F990075469C /* state_next_normal.png */; };
+		D0B0B3741AFF3F990075469C /* state_play_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B36B1AFF3F990075469C /* state_play_normal.png */; };
+		D0B0B3751AFF3F990075469C /* state_por_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B36C1AFF3F990075469C /* state_por_normal.png */; };
+		D0B0B3761AFF3F990075469C /* select_random_button.png in Resources */ = {isa = PBXBuildFile; fileRef = D0B0B36D1AFF3F990075469C /* select_random_button.png */; };
+		D0B0B37B1AFF471B0075469C /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B0B3791AFF471B0075469C /* PreferenceController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0B0B3211AFDAD9A0075469C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0B0B3021AFDAD9A0075469C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0B0B3091AFDAD9A0075469C;
+			remoteInfo = "Pusic Lite";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0070AC01C1730EA0047FBDC /* music_cover_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_cover_default.png; sourceTree = "<group>"; };
+		D0070AC21C1732640047FBDC /* warning_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning_default.png; sourceTree = "<group>"; };
+		D00C76F71C109D4700149994 /* status_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status_dark.png; sourceTree = "<group>"; };
+		D03625431BADC00A000BF693 /* theme2_ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theme2_ok.png; sourceTree = "<group>"; };
+		D03625451BADC2AC000BF693 /* theme1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theme1.png; sourceTree = "<group>"; };
+		D03625461BADC2AC000BF693 /* theme1_ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theme1_ok.png; sourceTree = "<group>"; };
+		D03625491BADC343000BF693 /* theme2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theme2.png; sourceTree = "<group>"; };
+		D03D32A91BAE8D3F008742A5 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		D03D32AB1BAE8D65008742A5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D03F85471B78DD9300803576 /* RFOverlayScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFOverlayScroller.h; sourceTree = "<group>"; };
+		D03F85481B78DD9300803576 /* RFOverlayScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFOverlayScroller.m; sourceTree = "<group>"; };
+		D03F85491B78DD9300803576 /* RFOverlayScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFOverlayScrollView.h; sourceTree = "<group>"; };
+		D03F854A1B78DD9300803576 /* RFOverlayScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFOverlayScrollView.m; sourceTree = "<group>"; };
+		D03F854E1B78F83200803576 /* BDTableRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDTableRowView.h; sourceTree = "<group>"; };
+		D03F854F1B78F83200803576 /* BDTableRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDTableRowView.m; sourceTree = "<group>"; };
+		D042EC0C1B77616300D1E8C5 /* PusicStatusBarListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PusicStatusBarListViewController.h; sourceTree = "<group>"; };
+		D042EC0D1B77616300D1E8C5 /* PusicStatusBarListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PusicStatusBarListViewController.m; sourceTree = "<group>"; };
+		D042EC0E1B77616300D1E8C5 /* PusicStatusBarListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PusicStatusBarListViewController.xib; sourceTree = "<group>"; };
+		D042EC1A1B77AC5200D1E8C5 /* PusicTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PusicTableCellView.h; sourceTree = "<group>"; };
+		D042EC1B1B77AC5200D1E8C5 /* PusicTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PusicTableCellView.m; sourceTree = "<group>"; };
+		D04ADB331B25EC2E0094190A /* PreferenceController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferenceController.xib; sourceTree = "<group>"; };
+		D072892B1C13E8E200A70112 /* default.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.sqlite; sourceTree = "<group>"; };
+		D072D3981B76508C006B27DC /* AYProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AYProgressIndicator.h; sourceTree = "<group>"; };
+		D072D3991B76508C006B27DC /* AYProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AYProgressIndicator.m; sourceTree = "<group>"; };
+		D072D3A71B7661D6006B27DC /* Repeat_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Repeat_normal.png; sourceTree = "<group>"; };
+		D072D3A81B7661D6006B27DC /* Repeat_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Repeat_press.png; sourceTree = "<group>"; };
+		D072D3A91B7661D6006B27DC /* Shuffle_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shuffle_normal.png; sourceTree = "<group>"; };
+		D072D3AA1B7661D6006B27DC /* Shuffle_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shuffle_press.png; sourceTree = "<group>"; };
+		D072D3AF1B7670E5006B27DC /* Songlist_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Songlist_normal.png; sourceTree = "<group>"; };
+		D072D3B51B7676DE006B27DC /* Songlist_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Songlist_press.png; sourceTree = "<group>"; };
+		D0B0B30A1AFDAD9A0075469C /* Pusic Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pusic Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B0B30F1AFDAD9A0075469C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0B0B3101AFDAD9A0075469C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0B0B3121AFDAD9A0075469C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0B0B3141AFDAD9A0075469C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D0B0B3151AFDAD9A0075469C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D0B0B3171AFDAD9A0075469C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0B0B31A1AFDAD9A0075469C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0B0B3201AFDAD9A0075469C /* Pusic LiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pusic LiteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B0B3251AFDAD9A0075469C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B0B3261AFDAD9A0075469C /* Pusic_LiteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pusic_LiteTests.m; sourceTree = "<group>"; };
+		D0B0B3311AFDAE8E0075469C /* Music.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Music.h; sourceTree = "<group>"; };
+		D0B0B3321AFDAE8E0075469C /* Music.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Music.m; sourceTree = "<group>"; };
+		D0B0B3351AFDAED20075469C /* CreateDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateDataBase.h; sourceTree = "<group>"; };
+		D0B0B3361AFDAED20075469C /* CreateDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateDataBase.m; sourceTree = "<group>"; };
+		D0B0B3391AFDAF1F0075469C /* PusicRHStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PusicRHStatusItemView.h; sourceTree = "<group>"; };
+		D0B0B33A1AFDAF1F0075469C /* PusicRHStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PusicRHStatusItemView.m; sourceTree = "<group>"; };
+		D0B0B33D1AFDAF420075469C /* PusicPopOverViewDelagate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PusicPopOverViewDelagate.h; sourceTree = "<group>"; };
+		D0B0B33E1AFDAF420075469C /* PusicPopOverViewDelagate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PusicPopOverViewDelagate.m; sourceTree = "<group>"; };
+		D0B0B3411AFDAF8F0075469C /* PusicStatusBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PusicStatusBarViewController.h; sourceTree = "<group>"; };
+		D0B0B3421AFDAF8F0075469C /* PusicStatusBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PusicStatusBarViewController.m; sourceTree = "<group>"; };
+		D0B0B3431AFDAF8F0075469C /* PusicStatusBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PusicStatusBarViewController.xib; sourceTree = "<group>"; };
+		D0B0B3481AFDAFD60075469C /* MusicDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicDao.h; sourceTree = "<group>"; };
+		D0B0B3491AFDAFD60075469C /* MusicDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicDao.m; sourceTree = "<group>"; };
+		D0B0B34B1AFDB17D0075469C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D0B0B34E1AFDB1E20075469C /* PusicUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PusicUserDefaults.h; sourceTree = "<group>"; };
+		D0B0B34F1AFDB1E20075469C /* PusicUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PusicUserDefaults.m; sourceTree = "<group>"; };
+		D0B0B3521AFDB71C0075469C /* PusicAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PusicAlert.h; sourceTree = "<group>"; };
+		D0B0B3531AFDB71C0075469C /* PusicAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PusicAlert.m; sourceTree = "<group>"; };
+		D0B0B3541AFDB71C0075469C /* PusicAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PusicAlert.xib; sourceTree = "<group>"; };
+		D0B0B3571AFDBE920075469C /* PusicContant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PusicContant.h; path = "Pusic Lite/PusicContant.h"; sourceTree = "<group>"; };
+		D0B0B3581AFDBE920075469C /* PusicContant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PusicContant.m; path = "Pusic Lite/PusicContant.m"; sourceTree = "<group>"; };
+		D0B0B35B1AFDC6CC0075469C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		D0B0B35D1AFF39830075469C /* status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status.png; sourceTree = "<group>"; };
+		D0B0B3631AFF3CE10075469C /* pusic_lite.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = pusic_lite.icns; sourceTree = "<group>"; };
+		D0B0B3651AFF3F990075469C /* state_next_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state_next_pressed.png; sourceTree = "<group>"; };
+		D0B0B3661AFF3F990075469C /* state_play_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state_play_pressed.png; sourceTree = "<group>"; };
+		D0B0B3671AFF3F990075469C /* state_play_puse_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state_play_puse_normal.png; sourceTree = "<group>"; };
+		D0B0B3681AFF3F990075469C /* state_play_puse_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state_play_puse_pressed.png; sourceTree = "<group>"; };
+		D0B0B3691AFF3F990075469C /* state_por_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state_por_pressed.png; sourceTree = "<group>"; };
+		D0B0B36A1AFF3F990075469C /* state_next_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state_next_normal.png; sourceTree = "<group>"; };
+		D0B0B36B1AFF3F990075469C /* state_play_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state_play_normal.png; sourceTree = "<group>"; };
+		D0B0B36C1AFF3F990075469C /* state_por_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state_por_normal.png; sourceTree = "<group>"; };
+		D0B0B36D1AFF3F990075469C /* select_random_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_random_button.png; sourceTree = "<group>"; };
+		D0B0B3781AFF471B0075469C /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		D0B0B3791AFF471B0075469C /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0B0B3071AFDAD9A0075469C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B0B35C1AFDC6CC0075469C /* libsqlite3.dylib in Frameworks */,
+				D0B0B34C1AFDB17D0075469C /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B0B31D1AFDAD9A0075469C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D03F85461B78DD7700803576 /* CustomScroller */ = {
+			isa = PBXGroup;
+			children = (
+				D03F85471B78DD9300803576 /* RFOverlayScroller.h */,
+				D03F85481B78DD9300803576 /* RFOverlayScroller.m */,
+				D03F85491B78DD9300803576 /* RFOverlayScrollView.h */,
+				D03F854A1B78DD9300803576 /* RFOverlayScrollView.m */,
+			);
+			name = CustomScroller;
+			sourceTree = "<group>";
+		};
+		D03F854D1B78F80F00803576 /* TableRow */ = {
+			isa = PBXGroup;
+			children = (
+				D03F854E1B78F83200803576 /* BDTableRowView.h */,
+				D03F854F1B78F83200803576 /* BDTableRowView.m */,
+			);
+			name = TableRow;
+			sourceTree = "<group>";
+		};
+		D042EC0B1B7760ED00D1E8C5 /* PopView2 */ = {
+			isa = PBXGroup;
+			children = (
+				D042EC0C1B77616300D1E8C5 /* PusicStatusBarListViewController.h */,
+				D042EC0D1B77616300D1E8C5 /* PusicStatusBarListViewController.m */,
+				D042EC0E1B77616300D1E8C5 /* PusicStatusBarListViewController.xib */,
+			);
+			name = PopView2;
+			sourceTree = "<group>";
+		};
+		D042EC111B77A61E00D1E8C5 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				D042EC1A1B77AC5200D1E8C5 /* PusicTableCellView.h */,
+				D042EC1B1B77AC5200D1E8C5 /* PusicTableCellView.m */,
+			);
+			name = TableCell;
+			sourceTree = "<group>";
+		};
+		D072892A1C1330FA00A70112 /* PerferenceButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PerferenceButton;
+			path = "Pusic Lite/PerferenceButton";
+			sourceTree = "<group>";
+		};
+		D072D3971B765067006B27DC /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				D072D3981B76508C006B27DC /* AYProgressIndicator.h */,
+				D072D3991B76508C006B27DC /* AYProgressIndicator.m */,
+			);
+			name = ProgressView;
+			sourceTree = "<group>";
+		};
+		D0B0B3011AFDAD9A0075469C = {
+			isa = PBXGroup;
+			children = (
+				D0B0B35B1AFDC6CC0075469C /* libsqlite3.dylib */,
+				D0B0B34B1AFDB17D0075469C /* AVFoundation.framework */,
+				D0B0B30C1AFDAD9A0075469C /* Pusic Lite */,
+				D0B0B3231AFDAD9A0075469C /* Pusic LiteTests */,
+				D0B0B30B1AFDAD9A0075469C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0B0B30B1AFDAD9A0075469C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0B30A1AFDAD9A0075469C /* Pusic Lite.app */,
+				D0B0B3201AFDAD9A0075469C /* Pusic LiteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0B0B30C1AFDAD9A0075469C /* Pusic Lite */ = {
+			isa = PBXGroup;
+			children = (
+				D03F854D1B78F80F00803576 /* TableRow */,
+				D03F85461B78DD7700803576 /* CustomScroller */,
+				D042EC0B1B7760ED00D1E8C5 /* PopView2 */,
+				D042EC111B77A61E00D1E8C5 /* TableCell */,
+				D072D3971B765067006B27DC /* ProgressView */,
+				D0B0B3511AFDB7080075469C /* Alterview */,
+				D0B0B35A1AFDBE9E0075469C /* Contant */,
+				D0B0B3771AFF46EE0075469C /* Preference */,
+				D0B0B34D1AFDB1CB0075469C /* UserDefaults */,
+				D0B0B3401AFDAF5A0075469C /* PopView1 */,
+				D0B0B33C1AFDAF2C0075469C /* PopOverView */,
+				D0B0B3381AFDAEF90075469C /* StatusItem */,
+				D0B0B3341AFDAEB00075469C /* DBhelper */,
+				D0B0B3301AFDAE760075469C /* model */,
+				D0B0B30F1AFDAD9A0075469C /* AppDelegate.h */,
+				D0B0B3101AFDAD9A0075469C /* AppDelegate.m */,
+				D0B0B3141AFDAD9A0075469C /* ViewController.h */,
+				D0B0B3151AFDAD9A0075469C /* ViewController.m */,
+				D0B0B3171AFDAD9A0075469C /* Images.xcassets */,
+				D0B0B3191AFDAD9A0075469C /* Main.storyboard */,
+				D0B0B30D1AFDAD9A0075469C /* Supporting Files */,
+			);
+			path = "Pusic Lite";
+			sourceTree = "<group>";
+		};
+		D0B0B30D1AFDAD9A0075469C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0070AC01C1730EA0047FBDC /* music_cover_default.png */,
+				D072892B1C13E8E200A70112 /* default.sqlite */,
+				D03D32AB1BAE8D65008742A5 /* Info.plist */,
+				D0B0B35D1AFF39830075469C /* status.png */,
+				D00C76F71C109D4700149994 /* status_dark.png */,
+				D0B0B3651AFF3F990075469C /* state_next_pressed.png */,
+				D0B0B3661AFF3F990075469C /* state_play_pressed.png */,
+				D0B0B3671AFF3F990075469C /* state_play_puse_normal.png */,
+				D072D3B51B7676DE006B27DC /* Songlist_press.png */,
+				D03625491BADC343000BF693 /* theme2.png */,
+				D0B0B3681AFF3F990075469C /* state_play_puse_pressed.png */,
+				D03625451BADC2AC000BF693 /* theme1.png */,
+				D03625461BADC2AC000BF693 /* theme1_ok.png */,
+				D072D3AF1B7670E5006B27DC /* Songlist_normal.png */,
+				D0070AC21C1732640047FBDC /* warning_default.png */,
+				D0B0B3691AFF3F990075469C /* state_por_pressed.png */,
+				D072D3A71B7661D6006B27DC /* Repeat_normal.png */,
+				D03625431BADC00A000BF693 /* theme2_ok.png */,
+				D072D3A81B7661D6006B27DC /* Repeat_press.png */,
+				D072D3A91B7661D6006B27DC /* Shuffle_normal.png */,
+				D072D3AA1B7661D6006B27DC /* Shuffle_press.png */,
+				D0B0B36A1AFF3F990075469C /* state_next_normal.png */,
+				D0B0B36B1AFF3F990075469C /* state_play_normal.png */,
+				D0B0B36C1AFF3F990075469C /* state_por_normal.png */,
+				D0B0B36D1AFF3F990075469C /* select_random_button.png */,
+				D0B0B3631AFF3CE10075469C /* pusic_lite.icns */,
+				D03D32A91BAE8D3F008742A5 /* InfoPlist.strings */,
+				D0B0B3121AFDAD9A0075469C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0B0B3231AFDAD9A0075469C /* Pusic LiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0B3261AFDAD9A0075469C /* Pusic_LiteTests.m */,
+				D0B0B3241AFDAD9A0075469C /* Supporting Files */,
+			);
+			path = "Pusic LiteTests";
+			sourceTree = "<group>";
+		};
+		D0B0B3241AFDAD9A0075469C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0B3251AFDAD9A0075469C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0B0B3301AFDAE760075469C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0B3311AFDAE8E0075469C /* Music.h */,
+				D0B0B3321AFDAE8E0075469C /* Music.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		D0B0B3341AFDAEB00075469C /* DBhelper */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0B3471AFDAFC20075469C /* DBmanger */,
+				D0B0B3461AFDAFAC0075469C /* DBcreation */,
+			);
+			name = DBhelper;
+			sourceTree = "<group>";
+		};
+		D0B0B3381AFDAEF90075469C /* StatusItem */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0B3391AFDAF1F0075469C /* PusicRHStatusItemView.h */,
+				D0B0B33A1AFDAF1F0075469C /* PusicRHStatusItemView.m */,
+			);
+			name = StatusItem;
+			sourceTree = "<group>";
+		};
+		D0B0B33C1AFDAF2C0075469C /* PopOverView */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0B33D1AFDAF420075469C /* PusicPopOverViewDelagate.h */,
+				D0B0B33E1AFDAF420075469C /* PusicPopOverViewDelagate.m */,
+			);
+			name = PopOverView;
+			sourceTree = "<group>";
+		};
+		D0B0B3401AFDAF5A0075469C /* PopView1 */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0B3411AFDAF8F0075469C /* PusicStatusBarViewController.h */,
+				D0B0B3421AFDAF8F0075469C /* PusicStatusBarViewController.m */,
+				D0B0B3431AFDAF8F0075469C /* PusicStatusBarViewController.xib */,
+			);
+			name = PopView1;
+			sourceTree = "<group>";
+		};
+		D0B0B3461AFDAFAC0075469C /* DBcreation */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0B3351AFDAED20075469C /* CreateDataBase.h */,
+				D0B0B3361AFDAED20075469C /* CreateDataBase.m */,
+			);
+			name = DBcreation;
+			sourceTree = "<group>";
+		};
+		D0B0B3471AFDAFC20075469C /* DBmanger */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0B3481AFDAFD60075469C /* MusicDao.h */,
+				D0B0B3491AFDAFD60075469C /* MusicDao.m */,
+			);
+			name = DBmanger;
+			sourceTree = "<group>";
+		};
+		D0B0B34D1AFDB1CB0075469C /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0B34E1AFDB1E20075469C /* PusicUserDefaults.h */,
+				D0B0B34F1AFDB1E20075469C /* PusicUserDefaults.m */,
+			);
+			name = UserDefaults;
+			sourceTree = "<group>";
+		};
+		D0B0B3511AFDB7080075469C /* Alterview */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0B3521AFDB71C0075469C /* PusicAlert.h */,
+				D0B0B3531AFDB71C0075469C /* PusicAlert.m */,
+				D0B0B3541AFDB71C0075469C /* PusicAlert.xib */,
+			);
+			name = Alterview;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D0B0B35A1AFDBE9E0075469C /* Contant */ = {
+			isa = PBXGroup;
+			children = (
+				D0B0B3571AFDBE920075469C /* PusicContant.h */,
+				D0B0B3581AFDBE920075469C /* PusicContant.m */,
+			);
+			name = Contant;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D0B0B3771AFF46EE0075469C /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+				D072892A1C1330FA00A70112 /* PerferenceButton */,
+				D0B0B3781AFF471B0075469C /* PreferenceController.h */,
+				D0B0B3791AFF471B0075469C /* PreferenceController.m */,
+				D04ADB331B25EC2E0094190A /* PreferenceController.xib */,
+			);
+			name = Preference;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0B0B3091AFDAD9A0075469C /* Pusic Lite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0B0B32A1AFDAD9A0075469C /* Build configuration list for PBXNativeTarget "Pusic Lite" */;
+			buildPhases = (
+				D0B0B3061AFDAD9A0075469C /* Sources */,
+				D0B0B3071AFDAD9A0075469C /* Frameworks */,
+				D0B0B3081AFDAD9A0075469C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pusic Lite";
+			productName = "Pusic Lite";
+			productReference = D0B0B30A1AFDAD9A0075469C /* Pusic Lite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0B0B31F1AFDAD9A0075469C /* Pusic LiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0B0B32D1AFDAD9A0075469C /* Build configuration list for PBXNativeTarget "Pusic LiteTests" */;
+			buildPhases = (
+				D0B0B31C1AFDAD9A0075469C /* Sources */,
+				D0B0B31D1AFDAD9A0075469C /* Frameworks */,
+				D0B0B31E1AFDAD9A0075469C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0B0B3221AFDAD9A0075469C /* PBXTargetDependency */,
+			);
+			name = "Pusic LiteTests";
+			productName = "Pusic LiteTests";
+			productReference = D0B0B3201AFDAD9A0075469C /* Pusic LiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0B0B3021AFDAD9A0075469C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = peter;
+				TargetAttributes = {
+					D0B0B3091AFDAD9A0075469C = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					D0B0B31F1AFDAD9A0075469C = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = D0B0B3091AFDAD9A0075469C;
+					};
+				};
+			};
+			buildConfigurationList = D0B0B3051AFDAD9A0075469C /* Build configuration list for PBXProject "Pusic Lite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0B0B3011AFDAD9A0075469C;
+			productRefGroup = D0B0B30B1AFDAD9A0075469C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0B0B3091AFDAD9A0075469C /* Pusic Lite */,
+				D0B0B31F1AFDAD9A0075469C /* Pusic LiteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0B0B3081AFDAD9A0075469C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D072892C1C13E90400A70112 /* default.sqlite in Resources */,
+				D042EC101B77616300D1E8C5 /* PusicStatusBarListViewController.xib in Resources */,
+				D03D32AA1BAE8D3F008742A5 /* InfoPlist.strings in Resources */,
+				D072D3B61B7676DE006B27DC /* Songlist_press.png in Resources */,
+				D0B0B3751AFF3F990075469C /* state_por_normal.png in Resources */,
+				D03625441BADC00A000BF693 /* theme2_ok.png in Resources */,
+				D072D3AB1B7661D6006B27DC /* Repeat_normal.png in Resources */,
+				D03625481BADC2AC000BF693 /* theme1_ok.png in Resources */,
+				D0B0B3761AFF3F990075469C /* select_random_button.png in Resources */,
+				D0B0B36E1AFF3F990075469C /* state_next_pressed.png in Resources */,
+				D0B0B3711AFF3F990075469C /* state_play_puse_pressed.png in Resources */,
+				D0B0B3181AFDAD9A0075469C /* Images.xcassets in Resources */,
+				D0B0B3731AFF3F990075469C /* state_next_normal.png in Resources */,
+				D0070AC11C1730EA0047FBDC /* music_cover_default.png in Resources */,
+				D036254A1BADC343000BF693 /* theme2.png in Resources */,
+				D0B0B3451AFDAF8F0075469C /* PusicStatusBarViewController.xib in Resources */,
+				D0B0B31B1AFDAD9A0075469C /* Main.storyboard in Resources */,
+				D072D3AE1B7661D6006B27DC /* Shuffle_press.png in Resources */,
+				D03D32AC1BAE8D65008742A5 /* Info.plist in Resources */,
+				D0B0B36F1AFF3F990075469C /* state_play_pressed.png in Resources */,
+				D0B0B3641AFF3CE10075469C /* pusic_lite.icns in Resources */,
+				D00C76F81C109D4700149994 /* status_dark.png in Resources */,
+				D0B0B3561AFDB71C0075469C /* PusicAlert.xib in Resources */,
+				D0B0B3721AFF3F990075469C /* state_por_pressed.png in Resources */,
+				D072D3B11B7670E5006B27DC /* Songlist_normal.png in Resources */,
+				D04ADB341B25EC2E0094190A /* PreferenceController.xib in Resources */,
+				D072D3AD1B7661D6006B27DC /* Shuffle_normal.png in Resources */,
+				D03625471BADC2AC000BF693 /* theme1.png in Resources */,
+				D0B0B3741AFF3F990075469C /* state_play_normal.png in Resources */,
+				D0B0B35E1AFF39830075469C /* status.png in Resources */,
+				D072D3AC1B7661D6006B27DC /* Repeat_press.png in Resources */,
+				D0B0B3701AFF3F990075469C /* state_play_puse_normal.png in Resources */,
+				D0070AC31C1732640047FBDC /* warning_default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B0B31E1AFDAD9A0075469C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0B0B3061AFDAD9A0075469C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B0B3591AFDBE920075469C /* PusicContant.m in Sources */,
+				D0B0B3161AFDAD9A0075469C /* ViewController.m in Sources */,
+				D0B0B3131AFDAD9A0075469C /* main.m in Sources */,
+				D042EC1C1B77AC5200D1E8C5 /* PusicTableCellView.m in Sources */,
+				D0B0B33B1AFDAF1F0075469C /* PusicRHStatusItemView.m in Sources */,
+				D0B0B3111AFDAD9A0075469C /* AppDelegate.m in Sources */,
+				D03F854C1B78DD9300803576 /* RFOverlayScrollView.m in Sources */,
+				D0B0B3371AFDAED20075469C /* CreateDataBase.m in Sources */,
+				D0B0B3501AFDB1E20075469C /* PusicUserDefaults.m in Sources */,
+				D072D39A1B76508C006B27DC /* AYProgressIndicator.m in Sources */,
+				D0B0B3441AFDAF8F0075469C /* PusicStatusBarViewController.m in Sources */,
+				D0B0B37B1AFF471B0075469C /* PreferenceController.m in Sources */,
+				D0B0B3331AFDAE8E0075469C /* Music.m in Sources */,
+				D0B0B34A1AFDAFD60075469C /* MusicDao.m in Sources */,
+				D03F85501B78F83200803576 /* BDTableRowView.m in Sources */,
+				D0B0B3551AFDB71C0075469C /* PusicAlert.m in Sources */,
+				D03F854B1B78DD9300803576 /* RFOverlayScroller.m in Sources */,
+				D042EC0F1B77616300D1E8C5 /* PusicStatusBarListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B0B31C1AFDAD9A0075469C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B0B3271AFDAD9A0075469C /* Pusic_LiteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0B0B3221AFDAD9A0075469C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0B0B3091AFDAD9A0075469C /* Pusic Lite */;
+			targetProxy = D0B0B3211AFDAD9A0075469C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0B0B3191AFDAD9A0075469C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0B0B31A1AFDAD9A0075469C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0B0B3281AFDAD9A0075469C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D0B0B3291AFDAD9A0075469C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D0B0B32B1AFDAD9A0075469C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Pusic Lite/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0B0B32C1AFDAD9A0075469C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Pusic Lite/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D0B0B32E1AFDAD9A0075469C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Pusic LiteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pusic Lite.app/Contents/MacOS/Pusic Lite";
+			};
+			name = Debug;
+		};
+		D0B0B32F1AFDAD9A0075469C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Pusic LiteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pusic Lite.app/Contents/MacOS/Pusic Lite";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0B0B3051AFDAD9A0075469C /* Build configuration list for PBXProject "Pusic Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B0B3281AFDAD9A0075469C /* Debug */,
+				D0B0B3291AFDAD9A0075469C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0B0B32A1AFDAD9A0075469C /* Build configuration list for PBXNativeTarget "Pusic Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B0B32B1AFDAD9A0075469C /* Debug */,
+				D0B0B32C1AFDAD9A0075469C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0B0B32D1AFDAD9A0075469C /* Build configuration list for PBXNativeTarget "Pusic LiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B0B32E1AFDAD9A0075469C /* Debug */,
+				D0B0B32F1AFDAD9A0075469C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0B0B3021AFDAD9A0075469C /* Project object */;
+}

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9059"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PusicStatusBarListViewController">
+            <connections>
+                <outlet property="musicTime" destination="eTO-8I-Qj1" id="pdH-fG-eO9"/>
+                <outlet property="next" destination="vIy-TS-2DT" id="t41-de-A2M"/>
+                <outlet property="play" destination="UNU-2w-qL0" id="MBt-2e-TON"/>
+                <outlet property="pro" destination="ugs-ik-Oju" id="VGU-s3-mjD"/>
+                <outlet property="repeatButton" destination="YIj-1k-4yX" id="HdY-oo-5aA"/>
+                <outlet property="shuffleButton" destination="hv6-1r-xa1" id="5f1-qW-v7p"/>
+                <outlet property="songListButton" destination="goQ-uH-Ysk" id="eY9-pA-LFD"/>
+                <outlet property="tableView" destination="dKd-A9-x3U" id="LVT-UH-faO"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="27" horizontalPageScroll="10" verticalLineScroll="27" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" scrollerKnobStyle="light" translatesAutoresizingMaskIntoConstraints="NO" id="Mag-iU-MHm" customClass="RFOverlayScrollView">
+                    <rect key="frame" x="-1" y="-1" width="323" height="199"/>
+                    <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="YhG-Fd-Lgv">
+                        <rect key="frame" x="0.0" y="0.0" width="323" height="199"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView canDrawConcurrently="YES" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="25" viewBased="YES" floatsGroupRows="NO" id="dKd-A9-x3U">
+                                <rect key="frame" x="0.0" y="0.0" width="323" height="199"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <animations/>
+                                <size key="intercellSpacing" width="3" height="2"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <tableViewGridLines key="gridStyleMask" vertical="YES" horizontal="YES"/>
+                                <color key="gridColor" red="0.71006944444444442" green="0.71006944444444442" blue="0.71006944444444442" alpha="0.63" colorSpace="calibratedRGB"/>
+                                <tableColumns>
+                                    <tableColumn identifier="pusicCell" width="320" minWidth="40" maxWidth="1000" id="k4F-yB-VEi">
+                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                        </tableHeaderCell>
+                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="3rM-gc-ejx">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                        <prototypeCellViews>
+                                            <tableCellView identifier="pusicCell" id="RR9-dW-3hA" userLabel="pusicCell" customClass="PusicTableCellView">
+                                                <rect key="frame" x="1" y="1" width="320" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7wq-l9-XoO">
+                                                        <rect key="frame" x="7" y="4" width="40" height="40"/>
+                                                        <animations/>
+                                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="0st-xl-nOq"/>
+                                                    </imageView>
+                                                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b0i-y3-BK1">
+                                                        <rect key="frame" x="58" y="25" width="248" height="17"/>
+                                                        <animations/>
+                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="left" title="沧海一声笑" drawsBackground="YES" id="sI5-o0-2JD">
+                                                            <font key="font" metaFont="system" size="15"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHh-SW-db4">
+                                                        <rect key="frame" x="275" y="4" width="34" height="17"/>
+                                                        <animations/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="left" title="0:00" drawsBackground="YES" id="GTY-6x-SFL">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qaz-ta-Ckb">
+                                                        <rect key="frame" x="58" y="4" width="187" height="17"/>
+                                                        <animations/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" title="许冠杰" placeholderString="专辑名／歌手名" drawsBackground="YES" id="Z5q-th-fwh">
+                                                            <font key="font" metaFont="cellTitle"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                                <animations/>
+                                                <connections>
+                                                    <outlet property="imageView" destination="7wq-l9-XoO" id="oh0-TS-EyE"/>
+                                                    <outlet property="musicArter" destination="qaz-ta-Ckb" id="oLe-Gs-opC"/>
+                                                    <outlet property="musicName" destination="b0i-y3-BK1" id="nAk-84-ASX"/>
+                                                    <outlet property="musictime" destination="aHh-SW-db4" id="y5J-eh-uoj"/>
+                                                </connections>
+                                            </tableCellView>
+                                        </prototypeCellViews>
+                                    </tableColumn>
+                                </tableColumns>
+                                <connections>
+                                    <outlet property="dataSource" destination="-2" id="S8Y-5Y-nQw"/>
+                                    <outlet property="delegate" destination="-2" id="cQH-hZ-yag"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.80000000000000004" alpha="0.55000000000000004" colorSpace="deviceWhite"/>
+                    </clipView>
+                    <animations/>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="aNw-te-cuS" customClass="RFOverlayScroller">
+                        <rect key="frame" x="-100" y="-100" width="308" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </scroller>
+                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="AQi-JL-5sw" customClass="RFOverlayScroller">
+                        <rect key="frame" x="-100" y="-100" width="15" height="199"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </scroller>
+                </scrollView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTO-8I-Qj1">
+                    <rect key="frame" x="120" y="199" width="80" height="14"/>
+                    <animations/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0:00/0:00" placeholderString="0:00/0:00" id="VDg-i2-wvj">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ugs-ik-Oju">
+                    <rect key="frame" x="20" y="215" width="30" height="30"/>
+                    <animations/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="state_por_normal" imagePosition="overlaps" alignment="center" alternateImage="state_por_pressed" refusesFirstResponder="YES" imageScaling="proportionallyDown" inset="2" id="mzn-fa-VOy">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="proMusic:" target="-2" id="2zi-iD-2P8"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UNU-2w-qL0">
+                    <rect key="frame" x="145" y="215" width="30" height="30"/>
+                    <animations/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="state_play_normal" imagePosition="overlaps" alignment="center" alternateImage="state_play_pressed" refusesFirstResponder="YES" imageScaling="proportionallyDown" inset="2" id="S7L-pF-tT8">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="palyMuisc:" target="-2" id="tj4-xs-4a7"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vIy-TS-2DT">
+                    <rect key="frame" x="270" y="215" width="30" height="30"/>
+                    <animations/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="state_next_normal" imagePosition="overlaps" alignment="center" alternateImage="state_next_pressed" refusesFirstResponder="YES" imageScaling="proportionallyDown" inset="2" id="4ji-sb-8dM">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="nextMusic:" target="-2" id="4BC-xg-qC4"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hv6-1r-xa1">
+                    <rect key="frame" x="95" y="247" width="20" height="20"/>
+                    <animations/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="Shuffle_normal" imagePosition="only" alignment="center" alternateImage="Shuffle_press" refusesFirstResponder="YES" imageScaling="proportionallyDown" inset="2" id="ZV6-S5-1cQ">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="shufflePlay:" target="-2" id="De2-2T-YhF"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIj-1k-4yX">
+                    <rect key="frame" x="199" y="247" width="20" height="20"/>
+                    <animations/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="Repeat_normal" imagePosition="only" alignment="center" alternateImage="Repeat_press" refusesFirstResponder="YES" imageScaling="proportionallyDown" inset="2" id="x60-UN-uOQ">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="repeatPlay:" target="-2" id="VuA-TM-PRR"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="goQ-uH-Ysk">
+                    <rect key="frame" x="150" y="247" width="20" height="20"/>
+                    <animations/>
+                    <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="Songlist_normal" imagePosition="only" alignment="center" alternateImage="Songlist_press" refusesFirstResponder="YES" imageScaling="proportionallyDown" inset="2" id="Rtw-2n-lBb">
+                        <behavior key="behavior" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="listPlay:" target="-2" id="yxs-4l-tR9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="Repeat_normal" width="33" height="26"/>
+        <image name="Repeat_press" width="33" height="26"/>
+        <image name="Shuffle_normal" width="31" height="23"/>
+        <image name="Shuffle_press" width="31" height="23"/>
+        <image name="Songlist_normal" width="42" height="23"/>
+        <image name="Songlist_press" width="42" height="23"/>
+        <image name="state_next_normal" width="40" height="40"/>
+        <image name="state_next_pressed" width="40" height="40"/>
+        <image name="state_play_normal" width="40" height="40"/>
+        <image name="state_play_pressed" width="40" height="40"/>
+        <image name="state_por_normal" width="40" height="40"/>
+        <image name="state_por_pressed" width="40" height="40"/>
+    </resources>
+</document>
